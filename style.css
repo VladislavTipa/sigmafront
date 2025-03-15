@@ -13,6 +13,9 @@ a:hover{
 a:active{
   color: yellow;
 }
-img {
-  
+h1 {
+  background-image: url("cat.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* background-attachment: fixed; */
 }
