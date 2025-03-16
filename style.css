@@ -19,3 +19,22 @@ h1 {
   background-size: cover;
   /* background-attachment: fixed; */
 }
+table {
+  width: 100%;
+}
+td{
+  text-align: center;
+}
+
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  /* border-radius: 10px; */
+}
+th, td {
+  background-color: #96D4;
+  border-style: dotted;
+  height: 50px;
+  padding: auto;
+  
+}
