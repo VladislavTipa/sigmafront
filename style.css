@@ -36,5 +36,13 @@ th, td {
   border-style: dotted;
   height: 50px;
   padding: auto;
-  
 }
+tr:nth-child(even){
+  background-color: aquamarine;
+}
+tr:hover {
+  background-color: rgba(255, 30, 0, 0.267);
+}
+/* tr {
+  border-bottom: 2px solid #000000;
+} */
