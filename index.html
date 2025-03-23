@@ -2,16 +2,22 @@
 <html lang="ru-RU">
 <head>
   <meta charset="UTF-8">
+  <meta name="keywords" content="HTML, CSS, JavaScript">
+  <meta name="description" content="html training">
+  <meta name="author" content="Vladislav Tipa">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Обновлять документ каждые 30 секунд
+  <meta http-equiv="refresh" content="30"> -->
   <title>Sigma document</title>
-  <link rel="icon" type="image/x-icon" href="logo_site.ico">
+  <link rel="icon" type="image/x-icon" href="image/logo_site.ico">
   <link rel="stylesheet" href="style.css">
+  <link rel="JavaSkript" href="javascript.js">
   <!-- <style>
     body {background-color: antiquewhite;}
   </style> -->
 </head>
 <body>
-  <h1 style="font-size:50px; background-color: aqua; font-family: Verdana, Geneva, Tahoma, sans-serif;">Мой заголовок</h1>
+  <h1 id="Header" style="font-size:50px; background-color: aqua; font-family: Verdana, Geneva, Tahoma, sans-serif;">Мой заголовок</h1>
   <h1 style="text-align:center;">Krutoy</h1>
   <h2 style="border: 5px solid red; padding: 50px; margin: 30px; text-align: center;">Второй заголовок</h2>
   <h3>Третий!</h3>
@@ -19,7 +25,7 @@
   <p title="Всплывающая подсказка">Vlad and Katy</p>
   <a href="https://vk.com/feed" target="_blank">Ссылка</a>
   <br>
-  <img src="cat.png" alt="Фигня какая-то" width="250">
+  <img src="image/cat.png" alt="Фигня какая-то" width="250">
   <hr>
   <p>
     Первая<br>
@@ -62,8 +68,8 @@
   <h1 style="background-color: #802daf;">...</h1>
   <p style="font-size: 50px;">Тест второго комита</p>
   <p style="text-align: center;">
-    <a href="cat.png" target="_blank" title="Тут большой котик">
-    <img src="cat.png" alt="Тут кот типа" style="height: 150px;">
+    <a href="image/cat.png" target="_blank" title="Тут большой котик">
+    <img src="image/cat.png" alt="Тут кот типа" style="height: 150px;">
     </a>
   </p>
   <a href="mailto:stran.rus228@yandex.ru">Отправь писмо</a>
@@ -71,17 +77,16 @@
   <a href="https://vk.com/type_typical" target="_blank">
   <img src="https://sun9-58.userapi.com/impg/ibz-adgnVW_pSgse0ZmfY1nUMwDjsxT1la23FA/4d_sBFRpUwo.jpg?size=2000x2000&quality=95&sign=487b571257c92f0bb50c1f3115809659&type=album" alt="Котик" width="25%">
   </a>
-  <p style="font-size: 30px;">Справа гиганский кот=><img src="cat.png" alt="Гиганский кот" width="50%"></p>
+  <p style="font-size: 30px;">Справа гиганский кот=><img src="image/cat.png" alt="Гиганский кот" width="50%"></p>
 
-  <img src="work_table.jpg" alt="Рабочий стол" usemap="#workmap" style="width: 50%; float: left;">
+  <img src="image/work_table.jpg" alt="Рабочий стол" usemap="#workmap" style="width: 50%; float: left;">
   <map name="workmap">
-    <area shape="circle" coords="50, 50, 50" href="work_table.jpg" target="_blank">
+    <area shape="circle" coords="50, 50, 50" href="image/work_table.jpg" target="_blank">
   </map>
   <br>
   <picture>
-    <source media="(min-width: 1000px)" srcset="work_table.jpg">
-
-    <img src="cat.png" alt="Тупа кот">
+    <source media="(min-width: 1000px)" srcset="image/work_table.jpg">
+    <img src="image/cat.png" alt="Тупа кот">
   </picture>
   <p style="font-size: 45px;">Тестим таблицу</p>
   <table>
@@ -161,6 +166,16 @@
       <p style="font-size: 20px;">capital of britain</p>
     </div>
   </div>
+  <p style="text-align: center;"><a href="#Header"><button style="height: 50px; width: auto;">Прыгнуть в верхний заголовок</button></a></p>
+  <iframe src="index.html" style="height: 500px; width: 700px; border: none;" name="iframe_a" title="Этот же сайт"></iframe>
+  <p><a href="image/cat.png" target="iframe_a">Сделай кота</a></p>
+  <p><a href="index.html" target="iframe_a">Сделай сайт</a></p>
+
+  <p id="demo"></p>
+  <script>
+    document.getElementById("demo").innerHTML = "Hello JavaSkript!";
+  </script>
+  <noscript>Тут должен быть JavaScript, но твой браузер его не поддерживает</noscript>
 
 </body>
 </html> 

@@ -28,7 +28,7 @@ a:hover, a:active {
 } */
 
 h1 {
-  background-image: url("cat.png");
+  background-image: url("image/cat.png");
   background-repeat: no-repeat;
   background-size: cover;
   /* background-attachment: fixed; */
@@ -84,7 +84,7 @@ li a:hover {
 div {
   text-align: center;
 }
-div.mycontainer {
+.mycontainer {
   display: grid;
-  grid-template-columns: 20% 40% 20%;
+  grid-template-columns: 20% 45% 20%;
 }
