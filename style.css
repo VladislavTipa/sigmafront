@@ -15,6 +15,7 @@ a:active{
   color: yellow;
 }
 /* Это делает из ссылки кнопку 
+
 a:link, a:visited {
   background-color: aqua;
   color: black;
@@ -25,7 +26,8 @@ a:link, a:visited {
 }
 a:hover, a:active {
   background-color: blueviolet;
-} */
+} 
+  */
 
 h1 {
   background-image: url("image/cat.png");
@@ -57,11 +59,14 @@ tr:nth-child(even){
 tr:hover {
   background-color: rgba(255, 30, 0, 0.267);
 }
-/* tr {
+/* 
+tr {
   border-bottom: 2px solid #000000;
-} */
+} 
+  */
 
-/* ul {
+/* 
+ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -80,11 +85,29 @@ li a {
 }
 li a:hover {
   background-color: #39055c;
-} */
+} 
+  */
 div {
   text-align: center;
 }
 .mycontainer {
   display: grid;
   grid-template-columns: 20% 45% 20%;
+}
+
+.left, .right, .main {
+  font-size: 25px;
+}
+.left, .right {
+  float: left;
+  width: 20%;
+}
+.main {
+  float: left;
+  width: 60%;
+}
+@media screen and (max-width: 1200px) {
+  .left, .main, .right {
+    width: 100%;
+  }
 }
