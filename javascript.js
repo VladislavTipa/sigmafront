@@ -20,3 +20,23 @@ grd.addColorStop(1, "white");
 // Fill with gradient
 ctx.fillStyle = grd;
 ctx.fillRect(10, 10, 150, 80);
+
+var myVideo = document.getElementById("video_tik_tok");
+function playPause() {
+  if (myVideo.paused)
+    myVideo.play();
+  else
+    myVideo.pause();
+}
+function makeBig() {
+  myVideo.width = myVideo.width * 1.2;
+  myVideo.height = myVideo.height * 1.2;
+}
+function makeSmall() {
+  myVideo.width = myVideo.width * 0.8;
+  myVideo.height = myVideo.height * 0.8;
+}
+function makeNormal() {
+  myVideo.width = 360;
+  myVideo.height = 640;
+}
