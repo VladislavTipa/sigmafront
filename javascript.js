@@ -40,3 +40,20 @@ function makeNormal() {
   myVideo.width = 360;
   myVideo.height = 640;
 }
+
+const x = document.getElementById("demo_local");
+function getLocation() {
+  if(navigator.geolocation){
+    navigator.geolocation.getCurrentPosition(success, error);
+  }
+  else {
+    x.innerHTML = "Нет Геолокации";
+  }
+}
+function success(position) {
+  x.innerHTML = "Ширина: " + position.coords.latitude +
+  "<br>Долгота: " + position.coords.longitude;
+}
+function error() {
+  alert("Изви, нет позиции")
+}
