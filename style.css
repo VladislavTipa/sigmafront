@@ -111,3 +111,12 @@ div {
     width: 100%;
   }
 }
+#bottom {
+  border-left: solid #802daf;
+  padding: 5px;
+  margin: 20px 30px;
+  background-color: #7f2daf77;
+  border-radius: 10px;
+  outline: dotted #7f2daf49;
+  outline-offset: 10px;
+}
