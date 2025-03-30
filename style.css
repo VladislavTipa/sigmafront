@@ -120,3 +120,14 @@ div {
   outline: dotted #7f2daf49;
   outline-offset: 10px;
 }
+#test-text{
+  width: 300px;
+  border: solid;
+  padding: 10px;
+  text-indent: 10px;
+  letter-spacing: 5px;
+  text-align: justify;
+  line-height: 1.5;
+  word-spacing: 10px;
+  text-shadow: 2px 2px 5px;
+}
