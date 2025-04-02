@@ -55,12 +55,23 @@ function success(position) {
   "<br>Долгота: " + position.coords.longitude;
 }
 function error() {
-  alert("Изви, нет позиции")
+  alert("Изви, нет позиции");
 }
 
 function FlipFunction() {
-  document.getElementById("flip-panel").style.display = "block"
+  document.getElementById("flip-panel").style.display = "block";
 }
 function CloseFlipFunction() {
-  document.getElementById("flip-panel").style.display = "none"
+  document.getElementById("flip-panel").style.display = "none";
+}
+
+function revomeElement() {
+  document.getElementById("box1").style.display = "none";
+}
+function changeVisibility() {
+  document.getElementById("box2").style.visibility = "hidden";
+}
+function resetElement() {
+  document.getElementById("box1").style.display = "block";
+  document.getElementById("box2").style.visibility = "visible";
 }

@@ -159,3 +159,15 @@ div {
   border: 2px solid white;
   padding: 10px;
 }
+
+.box {
+  float: left;
+  text-align: center;
+  width: 120px;
+  border: 1px solid black;
+  margin: 4px;
+  padding: 6px;
+}
+#box1 {background-color: #7f2daf49;}
+#box2 {background-color: #af2d6a49;}
+#box3 {background-color: #362daf49;}
