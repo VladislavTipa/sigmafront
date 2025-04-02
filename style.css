@@ -140,3 +140,22 @@ div {
   width: 700px;
   text-align: left;
 }
+
+#flip-div {
+  background-color: rgb(133, 182, 166);
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 700px;
+}
+#flip-div button {
+  background-color: rgb(93, 214, 174);
+  padding: 10px;
+  margin: 10px;
+}
+#flip-panel {
+  display: none;
+}
+.flip {
+  border: 2px solid white;
+  padding: 10px;
+}

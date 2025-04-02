@@ -57,3 +57,10 @@ function success(position) {
 function error() {
   alert("Изви, нет позиции")
 }
+
+function FlipFunction() {
+  document.getElementById("flip-panel").style.display = "block"
+}
+function CloseFlipFunction() {
+  document.getElementById("flip-panel").style.display = "none"
+}
