@@ -123,6 +123,7 @@ div {
   outline: dotted #7f2daf49;
   outline-offset: 10px;
   font-family: Arial, Helvetica, sans-serif;
+  position: static;
 }
 #test-text{
   width: 300px;
@@ -171,3 +172,20 @@ div {
 #box1 {background-color: #7f2daf49;}
 #box2 {background-color: #af2d6a49;}
 #box3 {background-color: #362daf49;}
+
+/* Закрепить главный Хедер в верху страницы
+#Header {
+  position: sticky;
+  top: 0;
+} 
+  */
+
+#overflow-test {
+  width: 200px;
+  height: 50px;
+  background-color: antiquewhite;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  margin: 10px;
+  margin-bottom: 30px;
+}
