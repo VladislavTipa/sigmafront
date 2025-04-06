@@ -203,3 +203,24 @@ div {
   line-height: 50px;
   font-size: 36px;
 }
+
+ul.test-menu {
+  list-style-type: none;
+  margin: 1px0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #0a141f49;
+}
+li.test-menu {
+  float: left;
+}
+li.test-menu  a{
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+li.test-menu  a:hover {
+  background-color: #000000;
+}
