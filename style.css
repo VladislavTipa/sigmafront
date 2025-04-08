@@ -90,9 +90,9 @@ li a:hover {
   background-color: #39055c;
 } 
   */
-div {
+/* div {
   text-align: center;
-}
+} */
 .mycontainer {
   display: grid;
   grid-template-columns: 20% 45% 20%;
@@ -223,4 +223,19 @@ li.test-menu  a{
 }
 li.test-menu  a:hover {
   background-color: #000000;
+}
+.video-div {
+  text-align: center;
+}
+.center-div {
+  margin: auto;
+  width: 50%;
+  border: 2px solid;
+  padding: 5px;
+}
+.center-image {
+  width: 20%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
 }
