@@ -273,3 +273,6 @@ li.test-menu  a:hover {
   visibility: visible;
   text-align: center;
 }
+q:lang(no) {
+  quotes: "~" "~";
+}
