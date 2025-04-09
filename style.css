@@ -239,3 +239,8 @@ li.test-menu  a:hover {
   margin-right: auto;
   display: block;
 }
+
+.svg-img-primer {
+  width: 10%;
+  margin: auto;
+}
