@@ -297,3 +297,22 @@ q:lang(no) {
 #chmony-cat:hover #chmony-text{
   visibility: visible;
 }
+
+.dropdown {
+  position:relative;
+  display: inline-block;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #d6a9f0;
+  width: 100%;
+  overflow: auto;
+  border: none;
+  border-radius: 16px;
+  z-index: 1;
+  padding: 10px 15px;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
