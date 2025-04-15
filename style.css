@@ -316,3 +316,42 @@ q:lang(no) {
 .dropdown:hover .dropdown-content {
   display: block;
 }
+
+div.gallery {
+  border: 1px solid black;
+}
+div.gallery:hover {
+  border: 2px dotted;
+  transform: scale(1.02);
+}
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+div.desc {
+  text-align: center;
+  padding: 5px;
+}
+* {
+  box-sizing: border-box;
+}
+.responsive {
+  padding: 6px;
+  float: left;
+  width: 24.9%;
+}
+@media only screen and (max-width: 1080px){
+  .responsive{
+    width: 49.9%;
+  }
+}
+@media only screen and (max-width: 700px){
+  .responsive{
+    width: 100%;
+  }
+}
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
