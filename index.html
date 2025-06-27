@@ -1,11 +1,196 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru-RU">
 <head>
   <meta charset="UTF-8">
+  <meta name="description" content="Повторение материала">
+  <meta name="keywords" content="Повторение, метериал, html">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Повторение</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="image/logo_site.ico">
 </head>
 <body>
-  
-</body>
+  <h1>Заголовок</h1>
+  <h2>Заголовок</h2>
+  <h3>Заголовок</h3>
+  <h4>Заголовок</h4>
+  <h5>Заголовок</h5>
+  <h6>Заголовок</h6>
+  <a href="#footer">Спуск вниз</a>
+  <p>
+    <pre>
+      Учтены отступы
+      в HTML
+    </pre>
+    <b>Жирный</b>
+    <strong>Строгий(акцентный жирный текст)</strong>
+    <i>Курсивный</i>
+    <em>Акцентный курсив</em>
+    <s>Скидка</s>
+    <u>Подчекнутый</u>
+    <sub>Подстрочнй</sub>
+    <sup>Надстрочный</sup>
+    <small>Маленький</small>
+    <mark>Выделенный текст</mark>
+    <code>Моноширинный код</code>
+  </p>
+  <hr>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat ipsam magni fuga, sequi quidem optio magnam? Reiciendis error et optio laborum quaerat consequuntur, nostrum atque, nisi maxime labore, ea laudantium.</p>
+  <a href="image/cat.png" download="">Скачай кота</a>
+
+  <button type="button">Кнопка</button>
+  <button type="reset">Обновить</button><br>
+
+  <img 
+    src="/image/chmony.jpg"
+    alt="Котик чмоня"
+    width="300" height="300"
+    loading="lazy"
+  >
+  <blockquote>
+    <p>
+      Большая и крутая цитата
+    </p>
+  </blockquote>
+  <p>Имя автора, <cite>Источник...</cite></p>
+  <p>А вот пример маленькой цитаты: <q cite="...">Хай</q></p>
+  <video controls height="720">
+    <source src="/media/tik_tok.mp4" type="video/mp4">
+    <p>У тебя не поддерживается</p>
+  </video>
+  <audio src="/media/saypink-protest.mp3" controls
+  ></audio><br>
+
+  <iframe src="https://yandex.ru/map-widget/v1/?  um=constructor%3Acb7ed63226f27d58f506faa3a64e32c51032b7a79562b80c170edbec429d0897 &amp;source=constructor" width="500" height="500" frameborder="0"></iframe>
+
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/6PL2TqBdz0I?  si=spJ5eYX5YX0wXoG3" title="YouTube video player" frameborder="0"   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope;  picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"  allowfullscreen></iframe>
+
+  <table border="1">
+    <caption>Крутая табличка</caption>
+    <thead>
+      <tr>
+        <th rowspan="2">Вид услуги</th>
+        <th rowspan="2">Ед. изм.</th>
+        <th colspan="2">Объём коммунальных услуг</th>
+        <th rowspan="2">Размеро платы</th>
+      </tr>
+      <th>на индив. потребл.</th>
+      <th>на общедом. нужды</th>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Холодная вода</td>
+        <td>Куб м.</td>
+        <td>4</td>
+        <td>3</td>
+        <td>1000.00</td>
+      </tr>
+      <tr>
+        <td>Горячая вода</td>
+        <td>Куб м.</td>
+        <td>3</td>
+        <td>1</td>
+        <td>800.00</td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <td colspan="4">Итого к оплате за расчётный период</td>
+        <td>1800.00</td>
+      </tr>
+    </tfoot>
+  </table>
+
+  <form>
+    <fieldset>
+      <legend>Анкета</legend>
+      <label for="FIO">ФИО:</label>
+      <input 
+        id="FIO" 
+        name="FIO-user" 
+        type="text" 
+        placeholder="Иванов Иван Иваныч"
+        />
+    </fieldset>
+    <fieldset>
+      <legend>Ваш пол</legend>
+      <P>
+        <input
+        type="radio"
+        id="male"
+        name="gender"
+        value="male"
+        checked
+        />
+        <label for="male">Мужчина</label>
+      </P>
+      <P>
+        <input
+        type="radio"
+        id="female"
+        name="gender"
+        value="female"
+        />
+        <label for="female">Женщина</label>
+      </P>
+    </fieldset>
+    <fieldset>
+      <legend>Согласия</legend>
+      <p>
+        <input
+        type="checkbox"
+        id="agreement"
+        name="'agreement"
+        value="agreement"
+        checked
+        />
+        <label for="agreement">Согасен на рассылку</label>
+      </p>
+    </fieldset>
+    <input
+    type="range"
+    id="solo-range"
+    name="solo-range"
+    min="1"
+    max="100"
+    /><br>
+    <textarea>Напиши</textarea><br>
+    <select name="" id="">
+      <option value="">Первый вариант</option>
+      <option value="" selected>Второй варинат</option>
+    </select>
+    <select name="" id="" multiple>
+      <option value="">Первый вариант</option>
+      <option value="">Второй варинат</option>
+      <option value="">Треритий</option>
+    </select>
+    <select name="" id="" required>
+      <option value="" disabled selected>Не выбрано</option>
+      <optgroup label="Первый">
+        <option value="">Первый вариант</option>
+      </optgroup>
+      <optgroup label="Второй">
+        <option value="">Второй варинат</option>
+      </optgroup>
+    </select>
+    <button type="submit">Отправить</button>
+  </form>
+
+  <p class="obvod">Текст с обводкой слева</p>
+
+  <button type="button" onclick="alert('Ты дурак')">
+    Нажми на меня
+  </button><br>
+
+  <svg 
+    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 513.749 513.749" style="enable-background:new 0 0 513.749 513.749;" xml:space="preserve" width="32" height="32">
+    <g>
+	  <path d="M504.352,459.061l-99.435-99.477c74.402-99.427,54.115-240.344-45.312-314.746S119.261-9.277,44.859,90.15   S-9.256,330.494,90.171,404.896c79.868,59.766,189.565,59.766,269.434,0l99.477,99.477c12.501,12.501,32.769,12.501,45.269,0   c12.501-12.501,12.501-32.769,0-45.269L504.352,459.061z M225.717,385.696c-88.366,0-160-71.634-160-160s71.634-160,160-160   s160,71.634,160,160C385.623,314.022,314.044,385.602,225.717,385.696z"/></g>
+  </svg>
+
+  <img src="/image/lup.svg" alt="Лупка" width="32" title="Лупка">
+
+  <footer id="footer">
+    Самый низ
+  </footer>
 </html>
